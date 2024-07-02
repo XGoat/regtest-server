@@ -50,7 +50,6 @@ WORKDIR /root/regtest-server
 # Change the checkout branch if you need to. Must fetch because of Docker cache
 # RUN git fetch origin && \
 #   git checkout ebee446d7c3b9071633764b39cdca3ac1b28d253
-
 RUN npm i
 
 ENTRYPOINT ["/root/run_regtest_app.sh"]
